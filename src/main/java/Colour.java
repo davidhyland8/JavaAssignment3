@@ -9,6 +9,7 @@ public class Colour  {
         this.g = g;
         this.b = b;
         this.type = type;
+        maxMinValues();
     }
 
     public boolean equalsColour(Colour colour2) {
@@ -28,6 +29,32 @@ public class Colour  {
 
         else{
             return "Cannot add these colours, different types.";
+        }
+    }
+
+    public void maxMinValues(){
+        if (this.r > 255){
+            this.r = 255;
+        }
+
+        if (this.r < 0){
+            this.r = 0;
+        }
+
+        if (this.g > 255){
+            this.g = 255;
+        }
+
+        if (this.g < 0){
+            this.g = 0;
+        }
+
+        if (this.b > 255){
+            this.b = 255;
+        }
+
+        if (this.b < 0){
+            this.b = 0;
         }
     }
 }
