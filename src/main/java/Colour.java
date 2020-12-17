@@ -10,5 +10,8 @@ public class Colour  {
         this.b = b;
         this.type = type;
     }
-    
+
+    public boolean equalsColour(Colour colour2) {
+        return true;
+    }
 }
