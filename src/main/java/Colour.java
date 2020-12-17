@@ -70,4 +70,20 @@ public class Colour  {
     public String toString(){
         return String.format("Type: %s, first component: %d, second component: %d, third component: %d", this.type, this.r, this.g, this.b);
     }
+
+    public int getR(){
+        return this.r;
+    }
+
+    public int getG(){
+        return this.g;
+    }
+
+    public int getB(){
+        return this.b;
+    }
+
+    public String getType(){
+        return this.type;
+    }
 }
