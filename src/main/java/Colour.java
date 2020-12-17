@@ -12,6 +12,12 @@ public class Colour  {
     }
 
     public boolean equalsColour(Colour colour2) {
-        return true;
+        if (this.type.equals(colour2.type)){
+            return this.r == colour2.r && this.g == colour2.g && this.b == colour2.b;
+        }
+
+        else{
+            return false;
+        }
     }
 }
