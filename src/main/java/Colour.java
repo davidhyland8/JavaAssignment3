@@ -20,4 +20,14 @@ public class Colour  {
             return false;
         }
     }
+
+    public Object add(Colour colour) {
+        if (this.type.equals(colour.type)){
+            return new Colour(this.r + colour.r, this.g + colour.g, this.b + colour.b, this.type);
+        }
+
+        else{
+            return "Cannot add these colours, different types.";
+        }
+    }
 }
