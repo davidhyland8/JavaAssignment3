@@ -57,4 +57,9 @@ public class Colour  {
             this.b = 0;
         }
     }
+
+    @Override
+    public String toString(){
+        return String.format("Type: %s, first component: %d, second component: %d, third component: %d", this.type, this.r, this.g, this.b);
+    }
 }
